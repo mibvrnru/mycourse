@@ -8,80 +8,94 @@
     <meta name="keywords" content="MiB, resume, site">
     <meta name "description" content="MiB делает свой резюме сайт,  зачем?... чтобы был... ">
     <title>MiB resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <img src="https://cdn-bio.qrz.com/e/r3kee/QSL_R3KEE.jpg" width="450" alt="">
-    <h1>R3KEE</h1>
+    <div class="container">
+        <div class="info">
+            <img src="https://cdn-bio.qrz.com/e/r3kee/QSL_R3KEE.jpg" class="logo">
+            <div class="info-text">
+                <h1>R3KEE</h1>
 
-    <p>Мой радиолюбительский позывной ;-)</p>
+                <p>Мой радиолюбительский позывной ;-)</p>
 
-    <p>я люблю работать в <em>digi модах</em>, особенно привлекают SSTV,<br>недавно связался с Папуа Новая Гвинея-
-        <strong>P29RO</strong>, Того-<strong>5V7RU</strong>, Джибутти- <strong>J28MD</strong></p>
+                <p>я люблю работать в <em>digi модах</em>, особенно привлекают SSTV,<br>недавно связался с Папуа Новая
+                    Гвинея-
+                    <strong>P29RO</strong>, Того-<strong>5V7RU</strong>, Джибутти- <strong>J28MD</strong>
+                </p>
 
-    <a href="https://www.qrz.com/db/R3KEE" target="_blank">QRZ.COM</a>
-    &nbsp;|&nbsp;
-    <a href="https://www.qrzcq.com/call/R3KEE" target="_blank">QRZCQ.COM</a>
-    &nbsp;|&nbsp;
-    <a href="https://www.hamqth.com/r3kee" target="_blank">HAMQTH.COM</a>
-
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Дайвинг</li>
-        <li>Ракдиосвязь</li>
-        <li>SSTV</li>
-        <li>Программирование</li>
-    </ol>
-
-    <h2>Опытт работы</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Контора</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Совсем старая работа</td>
-                <td>программер</td>
-                <td>1996-1999</td>
-            </tr>
-            <tr>
-                <td>Предыдущая работа</td>
-                <td>сисадмин</td>
-                <td>1999-2014</td>
-            </tr>
-            <tr>
-                <td>Текущая работа</td>
-                <td>инженер связи</td>
-                <td>2014 - сейчас</td>
-            </tr>
-
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-    <form action="">       
-        <div>
-            <label for="text">Ваше имя</label>
-            <input type="text" id="text" placeholder="Введите имя">
+                <a href="https://www.qrz.com/db/R3KEE" target="_blank">QRZ.COM</a>
+                &nbsp;|&nbsp;
+                <a href="https://www.qrzcq.com/call/R3KEE" target="_blank">QRZCQ.COM</a>
+                &nbsp;|&nbsp;
+                <a href="https://www.hamqth.com/r3kee" target="_blank">HAMQTH.COM</a>
+            </div>
         </div>
+        <div class="card">
+            <div class="card hobby">
+                <h2>Мои хобби</h2>
+                <ol class="list">
+                    <li>Дайвинг</li>
+                    <li>Ракдиосвязь</li>
+                    <li>SSTV</li>
+                    <li>Программирование</li>
+                </ol>
+            </div>
+            <div class="card opyt">
+                <h2>Опыт работы</h2>
 
-        <div>
-            <label for="email">Ваш email</label>
-            <input type="email" id="text" placeholder="Введите email">
-        </div>
-        <div>
-            <label for="mss">Ваше сообщение</label>
-            <br>
-            <textarea name="" id="mss" cols="30" rows="5" placeholder="Введите текст..."></textarea>
-        </div>
-        <button type="submit">Отправить!</button>
-    </form>
+                <table class="table">
+                    <tbody>
+                        <!-- <tr>
+                        <th>Контора</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr> -->
+                        <tr>
+                            <td>Совсем старая работа</td>
+                            <td>программер</td>
+                            <td>1996-1999</td>
+                        </tr>
+                        <tr>
+                            <td>Предыдущая работа</td>
+                            <td>сисадмин</td>
+                            <td>1999-2014</td>
+                        </tr>
+                        <tr>
+                            <td>Текущая работа</td>
+                            <td>инженер связи</td>
+                            <td>2014 - сейчас</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
+
+
+            <div class="card form">
+                <h2>Связаться со мной</h2>
+                <form action="" class="i-form">
+                    <div class="form-row">
+                        <div class="i-form-group">
+                            <label for="text">Ваше имя</label>
+                            <input type="text" id="text" placeholder="Введите имя">
+                        </div>
+
+                        <div class="i-form-group">
+                            <label for="email">Ваш email</label>
+                            <input type="email" id="text" placeholder="Введите email">
+                        </div>
+                    </div>
+                    <div class="i-form-group">
+                        <label for="mss">Ваше сообщение</label>
+                        <textarea name="" id="mss" cols="30" rows="5" placeholder="Введите текст..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить!</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
